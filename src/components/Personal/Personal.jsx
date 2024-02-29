@@ -21,8 +21,8 @@ import motoDesktop from "../Portofoliu/Images/4motoForRent.webp";
 import motoPhone from "../Portofoliu/Images/4MotoForRentPhone.webp";
 import bidhouseDesktop from "../Portofoliu/Images/Bidhouse.webp";
 import bidhousePhone from "../Portofoliu/Images/BidhousePhone.webp";
-import scoalaDeSoferiDesktop from "../Portofoliu/Images/scoalaDeSoferi.webp";
-import scoalaDeSoferiPhone from "../Portofoliu/Images/scoalaDeSoferiPhone.webp";
+import splWheelsDesktop from "../Portofoliu/Images/spl-wheels.webp";
+import splWheelsPhone from "../Portofoliu/Images/spl-wheels.webp";
 import lorenaLashStudioDesktop from "../Portofoliu/Images/LorenaLashStudio.webp";
 import lorenaLashStudioPhone from "../Portofoliu/Images/LorenaLashStudioPhone.webp";
 import scoalaPopteanDesktop from "../Portofoliu/Images/scoalaPoptean.png";
@@ -37,14 +37,14 @@ function Personal() {
     scoalaPopteanDesktop,
     motoDesktop,
     lorenaLashStudioDesktop,
-    scoalaDeSoferiDesktop,
+    splWheelsDesktop,
   ];
   const phoneImg = [
     bidhousePhone,
     scoalaPopteanPhone,
     motoPhone,
     lorenaLashStudioPhone,
-    scoalaDeSoferiPhone,
+    splWheelsPhone,
   ];
   const sitesLink = [
     "https://bidhousesite.netlify.app/",
@@ -95,7 +95,7 @@ function Personal() {
             <p className="mt-4 text-[14px] ">Click on the next icons to get redirected </p>
             <div className="relative mt-1 flex text-[36px] gap-4 w-[15rem]">  <a className="cursor-pointer" href="https://www.linkedin.com/in/poleac-liviu-stefan" target="_blank"><AiOutlineLinkedin /> </a> <a className="cursor-pointer" href="https://github.com/PoleacLiviuStefan" target="_blank"><AiFillGithub /> </a>
             <a className="cursor-pointer rotate-90" href='tel:+40-753-616-640'><AiFillPhone /> </a>  
-            <span className="absolute animate-[clickIconsTutorial_15s_ease-in-out_infinite] text-[28px] font-bold text-purple-400"><BsMouse /><span className="animate-[clickAppear_15s_ease-in-out_infinite]">Click</span></span>
+
              </div> 
           </div>
           
@@ -106,7 +106,7 @@ function Personal() {
         </div>
       </div>
       <div className="relative mt-[4rem] flex flex-col items-center text-[20px] w-[1.2rem] h-[4rem] border-[1px] border-white rounded-[20px] py-[.2rem] opacity-[70%]">
-        <span className="absolute top-[4.4rem] lg:animate-[mouseTouchDown_1.8s_linear_infinite]">
+        <span className="absolute top-[4.4rem] animate-[TouchUp_1.8s_linear_infinite]  lg:animate-[mouseTouchDown_1.8s_linear_infinite]">
           {width < breakpoint ? <BsHandIndexThumb /> : <BsMouse />}
         </span>
       </div>
@@ -179,7 +179,7 @@ function Personal() {
           <MovingSlider objectOpacity="100%" rotated={false} />
           <MovingSlider objectOpacity="40%" rotated={true} />
         </div>
-        <img src={portofolioPresentation} />
+        <img className="mt-[3rem] w-[100%] h-[100%]"  src={portofolioPresentation} />
         <div className="relative mt-[2rem]  w-[350px] lg:w-[900px]">
           <a href={sitesLink[siteIndex]}>
             <img
@@ -214,7 +214,7 @@ function Personal() {
                 case 3:
                   return "Lorena Lash Studio";
                 case 4:
-                  return "Scoala De Soferi Diculescu Ciprian";
+                  return "SPL Wheels";
                 default:
                   return "Unknown Site";
               }
@@ -232,7 +232,7 @@ function Personal() {
                 case 3:
                   return "Lorena Lash Studio";
                 case 4:
-                  return "Scoala De Soferi Diculescu Ciprian";
+                  return "SPL Wheels";
                 default:
                   return "Unknown Site";
               }

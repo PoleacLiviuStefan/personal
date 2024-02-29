@@ -443,6 +443,16 @@ module.exports = {
           opacity:"30%"
         }
       },
+      TouchUp:{
+        '0%':{
+         top:"2.5rem",
+        opacity:"100%"
+        },
+        '100%':{
+          top:"0",
+          opacity:"30%"
+        }
+      },
        clickIconsTutorial: {
         '0%' : {
           opacity:"0%",
