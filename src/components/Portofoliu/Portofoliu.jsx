@@ -9,15 +9,19 @@ import scoalaDeSoferiDesktop from './Images/scoalaDeSoferi.webp'
 import scoalaDeSoferiPhone from './Images/scoalaDeSoferiPhone.webp'
 import lorenaLashStudioDesktop from './Images/LorenaLashStudio.webp'
 import lorenaLashStudioPhone from './Images/LorenaLashStudioPhone.webp'
- 
+import splDesktop from './Images/spl-wheels.webp'
+import splPhone from './Images/spl-mobile.webp'
+import socialPlatformDesktop from './Images/social-platform-desktop.webp'
+import socialPlatformPhone from './Images/social-platform-mobile.webp'
+
 import Fade from 'react-reveal/Fade';
 
 import { useState,useEffect } from 'react'
 const Portofoliu = () => {
   const [siteIndex,setSiteIndex]=useState(0)
-  const desktopImg=[bidhouseDesktop,motoDesktop,adinaDeskotp,scoalaDeSoferiDesktop,lorenaLashStudioDesktop]
-  const phoneImg=[bidhousePhone,motoPhone,adinaPhone,scoalaDeSoferiPhone,lorenaLashStudioPhone]
-  const sitesLink=["https://bidhousesite.netlify.app/","https://4motoforrent.ro/","https://adinahirsch.ro/","https://scoaladesoferi-diculescuciprian.ro/","https://lorenalash.ro/"]
+  const desktopImg=[bidhouseDesktop,motoDesktop,adinaDeskotp,scoalaDeSoferiDesktop,lorenaLashStudioDesktop,splDesktop,socialPlatformDesktop]
+  const phoneImg=[bidhousePhone,motoPhone,adinaPhone,scoalaDeSoferiPhone,lorenaLashStudioPhone,splPhone,socialPlatformPhone]
+  const sitesLink=["https://bidhousesite.netlify.app/","https://4motoforrent.ro/","https://adinahirsch.ro/","https://scoaladesoferi-diculescuciprian.ro/","https://lorenalash.ro/","https://spl-wheels.netlify.app/home","https://social.waygital.ro/explore/"]
   useEffect(() => {
     const interval = setTimeout(() => {
  
@@ -49,6 +53,8 @@ const Portofoliu = () => {
               <div onClick={()=>setSiteIndex(2)} className={`relative ${siteIndex===2 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==2 && "hidden"}`} /></div>
               <div onClick={()=>setSiteIndex(3)} className={`relative ${siteIndex===3 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==3 && "hidden"}`} /></div>
               <div onClick={()=>setSiteIndex(4)} className={`relative ${siteIndex===4 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==4 && "hidden"}`} /></div>
+              <div onClick={()=>setSiteIndex(5)} className={`relative ${siteIndex===4 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==4 && "hidden"}`} /></div>
+              <div onClick={()=>setSiteIndex(6)} className={`relative ${siteIndex===4 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==4 && "hidden"}`} /></div>
           </div>
         </Fade>
         </div>

@@ -10,7 +10,15 @@ import expressjs from "./Images/expressjs.webp";
 import firebase from "./Images/firebase.svg";
 import react from "./Images/React-icon.svg";
 import tailwind from "./Images/tailwind.svg";
-
+import stripe from './Images/stripe.svg'
+import redux from './Images/redux.svg';
+import mongodb from './Images/mongodb.svg'
+import github from './Images/github-mark-white.svg'
+import typescript from './Images/typescript.svg'
+import java from './Images/java.svg'
+import csharp from './Images/csharp.svg'
+import cpp from './Images/cpp.svg'
+import python from './Images/python.svg'
 import NavbarPersonal from "../Navbar/NavbarPersonal";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import MovingSlider from '../MovingSlider/MovingSlider'
@@ -22,11 +30,13 @@ import motoPhone from "../Portofoliu/Images/4MotoForRentPhone.webp";
 import bidhouseDesktop from "../Portofoliu/Images/Bidhouse.webp";
 import bidhousePhone from "../Portofoliu/Images/BidhousePhone.webp";
 import splWheelsDesktop from "../Portofoliu/Images/spl-wheels.webp";
-import splWheelsPhone from "../Portofoliu/Images/spl-wheels.webp";
+import splWheelsPhone from "../Portofoliu/Images/spl-mobile.webp";
 import lorenaLashStudioDesktop from "../Portofoliu/Images/LorenaLashStudio.webp";
 import lorenaLashStudioPhone from "../Portofoliu/Images/LorenaLashStudioPhone.webp";
 import scoalaPopteanDesktop from "../Portofoliu/Images/scoalaPoptean.png";
 import scoalaPopteanPhone from "../Portofoliu/Images/scoalaPopteanPhone.png";
+import socialPlatformDesktop from '../Portofoliu/Images/social-platform-desktop.webp'
+import socialPlatformPhone from '../Portofoliu/Images/social-platform-mobile.webp'
 
 function Personal() {
   const [siteIndex, setSiteIndex] = useState(0);
@@ -38,6 +48,7 @@ function Personal() {
     motoDesktop,
     lorenaLashStudioDesktop,
     splWheelsDesktop,
+    socialPlatformDesktop
   ];
   const phoneImg = [
     bidhousePhone,
@@ -45,6 +56,7 @@ function Personal() {
     motoPhone,
     lorenaLashStudioPhone,
     splWheelsPhone,
+    socialPlatformPhone
   ];
   const sitesLink = [
     "https://bidhousesite.netlify.app/",
@@ -52,7 +64,54 @@ function Personal() {
     "https://4motoforrent.ro/",
     "https://lorenalash.ro/",
     "https://spl-wheels.netlify.app/",
+    "https://social.waygital.ro/explore/"
   ];
+  const githubSitesLinks = [
+
+  ]
+  const descriptions = [
+    "An NFT project single page presentation, with active forms and good looking animations and responsive design.",
+    "Driving school, a complex project with an integrated theoretic test system with a dashboard for admins, where they can add new user and validate the accounts by a given code. Every normal user can make test which will be seen by the admin, also containing informations by the passed test, the answer which where correct or wrong, for both car and motorcycle categories",
+    "Motorcycle rental website, a simple landing page",
+    "Beauty salon integrated with a payment processosr (Stripe) and an attractive UI fitting the idea of minimalistic and intuitive experience for the user.",
+    "Wheels shop with a shopping cart, with a great UI/UX especaially on the inspecting the wheels options",
+    "Simple social app with email/google/reddit/X registration system. This platform has: notification system, upload images and videos endpoint, reset email, recover password, repost posts, add posts to saved/liked sections,searchbar, download media, make account private, disable downloads and disable comments, etc."
+  ];
+
+  const technologiesUsed = [
+   
+    <>
+        <img src={react} className="w-[70px] h-[70px]"/>
+        <img src={tailwind} className="w-[70px] h-[70px]"/>
+    </>,
+    
+    <>
+      <img src={react} className="w-[70px] h-[70px]"/>
+      <img src={tailwind} className="w-[70px] h-[70px]"/>
+      <img src={firebase} className="w-[70px] h-[70px]"/>
+    </>,
+    <>
+        <img src={react} className="w-[70px] h-[70px]"/>
+        <img src={tailwind} className="w-[70px] h-[70px]"/>
+    </>,
+    <>
+        <img src={react} className="w-[70px] h-[70px]"/>
+        <img src={tailwind} className="w-[70px] h-[70px]"/>
+        <img src={stripe} className="w-[120px] h-[70px]"/>
+    </>,
+    <>
+        <img src={react} className="w-[70px] h-[70px]"/>
+        <img src={tailwind} className="w-[70px] h-[70px]"/>
+        <img src={redux} className="w-[60px] h-[60px]"/>
+    </>, 
+    <>
+    <img src={react} className="w-[70px] h-[70px]"/>
+    <img src={tailwind} className="w-[70px] h-[70px]"/>
+    <img src={nodejs} className="w-[80px] h-[80px]"/>
+    <img src={mongodb} className="w-[70px] h-[70px]"/>
+</>, 
+  ]
+
   const [projectDescriptionIndex, setProjectDescriptionIndex] = useState(0);
   useEffect(() => {
     const interval = setTimeout(() => {
@@ -162,11 +221,16 @@ function Personal() {
             <img src={html} className="w-[50px] " />
             <img src={css} className="w-[40px] " />
             <img src={js} className="w-[40px] " />
-
+            <img src={typescript} className="w-[50px]" />
             <img src={tailwind} className="w-[40px] " />
             <img src={firebase} className="w-[40px] " />
             <img src={react} className="w-[40px]" />
             <img src={nodejs} className="w-[50px]" />
+            <img src={mongodb} className="w-[50px]" />
+            <img src={cpp} className="w-[50px]" />
+            <img src={csharp} className="w-[50px]" />
+            <img src={java} className="w-[40px]" />
+            <img src={python} className="w-[40px]" />
           </div>
         </div>
       </div>
@@ -180,7 +244,7 @@ function Personal() {
           <MovingSlider objectOpacity="40%" rotated={true} />
         </div>
         <img className="mt-[3rem] w-[100%] h-[100%]"  src={portofolioPresentation} />
-        <div className="relative mt-[2rem]  w-[350px] lg:w-[900px]">
+        <div className="flex flex-col items-center relative mt-[2rem]  w-[350px] lg:w-[900px]">
           <a href={sitesLink[siteIndex]}>
             <img
               onLoad={() => {
@@ -198,7 +262,7 @@ function Personal() {
             <img
               src={phoneImg[siteIndex]}
               alt="Prezentare site pe mobil"
-              className="absolute right-[.5rem] lg:right-[11rem] xl:right-[7rem] 2xl:right-0 top-[1rem] lg:top-[5rem] w-[60px] lg:w-[115px] xl:w-[130px] 2xl:w-[150px] cursor-pointer"
+              className="absolute right-[-.5rem] lg:right-[11rem] xl:right-[7rem] 2xl:right-0 top-[1rem] lg:top-[5rem] w-[60px] lg:w-[115px] xl:w-[130px] 2xl:w-[150px] cursor-pointer"
             />
           </a>
           <h3 className="mt-[2rem] text-[22px] font-extrabold text-center lg:text-[42px]">
@@ -215,29 +279,55 @@ function Personal() {
                   return "Lorena Lash Studio";
                 case 4:
                   return "SPL Wheels";
+                case 5:
+                  return "Social Media Platform";
                 default:
                   return "Unknown Site";
               }
             })()}
           </h3>
+          <a href="" className="cursor-pointer"><img src={github} className="w-[70px] h-[70px] my-[15px]"/></a>
           <p className=" text-gray-400 leading-5 text-justify lg:text-left">
             {(() => {
               switch (projectDescriptionIndex) {
                 case 0:
-                  return "Bidhouse";
+                  return descriptions[0];
                 case 1:
-                  return "Scoala Auto Moto Poptean";
+                  return descriptions[1];
                 case 2:
-                  return "4MOTOFORRENT";
+                  return descriptions[2];
                 case 3:
-                  return "Lorena Lash Studio";
+                  return descriptions[3];
                 case 4:
-                  return "SPL Wheels";
+                  return descriptions[4];
+                case 5:
+                  return descriptions[5]
                 default:
                   return "Unknown Site";
               }
             })()}
           </p>
+          <h3 className="font-extrabold text-center lg:text-[28px] mt-4">Technologies Used</h3>
+          <div className="flex justify-center">
+          {(() => {
+              switch (projectDescriptionIndex) {
+                case 0:
+                  return technologiesUsed[0];
+                case 1:
+                  return technologiesUsed[1];
+                case 2:
+                  return technologiesUsed[2];
+                case 3:
+                  return technologiesUsed[3];
+                case 4:
+                  return technologiesUsed[4];
+                case 5:
+                  return technologiesUsed[5]
+                default:
+                  return "Unknown Site";
+              }
+            })()}
+            </div>
         </div>
         <div className="flex">
           <div
@@ -297,6 +387,18 @@ function Personal() {
             <span
               className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${
                 siteIndex !== 4 && "hidden"
+              }`}
+            />
+          </div>
+          <div
+            onClick={() => setSiteIndex(5)}
+            className={`relative ${
+              siteIndex === 5 ? "border-white" : "border-gray-500"
+            } mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px]  overflow-hidden cursor-pointer`}
+          >
+            <span
+              className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${
+                siteIndex !== 5 && "hidden"
               }`}
             />
           </div>
