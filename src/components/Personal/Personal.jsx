@@ -23,7 +23,7 @@ import NavbarPersonal from "../Navbar/NavbarPersonal";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import MovingSlider from '../MovingSlider/MovingSlider'
 import fmiLogo from "./Images/FMILogo.png";
-import portofolioPresentation from "./Images/Postare.jpg";
+import portofolioPresentation from "./Images/generalPresentation.webp";
 import { Link, animateScroll as scroll } from "react-scroll";
 import motoDesktop from "../Portofoliu/Images/4motoForRent.webp";
 import motoPhone from "../Portofoliu/Images/4MotoForRentPhone.webp";
@@ -67,7 +67,11 @@ function Personal() {
     "https://social.waygital.ro/explore/"
   ];
   const githubSitesLinks = [
-
+    "https://github.com/PoleacLiviuStefan/bidhousesite",
+    "https://github.com/PoleacLiviuStefan/Driving-school-with-quizz",
+    "https://github.com/PoleacLiviuStefan/motoForRent",
+    "https://github.com/PoleacLiviuStefan/lorenaLash",
+    "https://github.com/PoleacLiviuStefan/wheelsshop"
   ]
   const descriptions = [
     "An NFT project single page presentation, with active forms and good looking animations and responsive design.",
@@ -160,7 +164,7 @@ function Personal() {
           
           <img
             src={meImg}
-            className="mt-[15rem] lg:mt-0 w-[700px] shadow-xl"
+            className="mt-[15rem] lg:mt-0 w-[700px] "
           />
         </div>
       </div>
@@ -243,7 +247,7 @@ function Personal() {
           <MovingSlider objectOpacity="100%" rotated={false} />
           <MovingSlider objectOpacity="40%" rotated={true} />
         </div>
-        <img className="mt-[3rem] w-[100%] h-[100%]"  src={portofolioPresentation} />
+        <img className="ml-[5rem] lg:ml-[12rem] mt-[5rem] w-[70%] lg:w-[80%] h-[100%]"  src={portofolioPresentation} />
         <div className="flex flex-col items-center relative mt-[2rem]  w-[350px] lg:w-[900px]">
           <a href={sitesLink[siteIndex]}>
             <img
