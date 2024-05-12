@@ -290,7 +290,24 @@ function Personal() {
               }
             })()}
           </h3>
-          <a href="" className="cursor-pointer"><img src={github} className="w-[70px] h-[70px] my-[15px]"/></a>
+          <a   href={(() => {
+              switch (projectDescriptionIndex) {
+                case 0:
+                  return githubSitesLinks[0];
+                case 1:
+                  return githubSitesLinks[1];
+                case 2:
+                  return githubSitesLinks[2];
+                case 3:
+                  return githubSitesLinks[3];
+                case 4:
+                  return githubSitesLinks[4];
+                case 5:
+                  return githubSitesLinks[5]
+                default:
+                  return "Unknown Site";
+              }
+            })()} target="_blank" className="cursor-pointer"><img src={github} className="w-[70px] h-[70px] my-[15px]"/></a>
           <p className=" text-gray-400 leading-5 text-justify lg:text-left">
             {(() => {
               switch (projectDescriptionIndex) {

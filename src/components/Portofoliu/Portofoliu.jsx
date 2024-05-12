@@ -21,7 +21,7 @@ const Portofoliu = () => {
   const [siteIndex,setSiteIndex]=useState(0)
   const desktopImg=[bidhouseDesktop,motoDesktop,adinaDeskotp,scoalaDeSoferiDesktop,lorenaLashStudioDesktop,splDesktop,socialPlatformDesktop]
   const phoneImg=[bidhousePhone,motoPhone,adinaPhone,scoalaDeSoferiPhone,lorenaLashStudioPhone,splPhone,socialPlatformPhone]
-  const sitesLink=["https://bidhousesite.netlify.app/","https://4motoforrent.ro/","https://adinahirsch.ro/","https://scoaladesoferi-diculescuciprian.ro/","https://lorenalash.ro/","https://spl-wheels.netlify.app/home","https://social.waygital.ro/explore/"]
+  const sitesLink=[["https://bidhousesite.netlify.app/", "https://github.com/PoleacLiviuStefan/bidhousesite"],["https://4motoforrent.ro/","https://github.com/PoleacLiviuStefan/motoForRent"],["https://adinahirsch.ro/",""],["https://scoaladesoferi-diculescuciprian.ro/",""],["https://lorenalash.ro/","https://github.com/PoleacLiviuStefan/lorenaLash"],["https://spl-wheels.netlify.app/home","https://github.com/PoleacLiviuStefan/wheelsshop"],["https://social.waygital.ro/explore/","https://github.com/PoleacLiviuStefan/social-media-platform"]]
   useEffect(() => {
     const interval = setTimeout(() => {
  
@@ -44,8 +44,8 @@ const Portofoliu = () => {
         </Fade>
         <Fade>
         <div className='relative  w-[350px] lg:w-[900px]'>
-            <a  href={sitesLink[siteIndex]}><img   src={desktopImg[siteIndex]} alt="Prezentare site pe desktop" className="lg:left-0 left-[1.5rem] w-[280px] lg:w-[650px] xl:w-[700px] 2xl:w-[800px] cursor-pointer" /></a>
-            <a  href={sitesLink[siteIndex]}> <img src={phoneImg[siteIndex]} alt="Prezentare site pe mobil" className="absolute right-[.5rem] lg:right-[11rem] xl:right-[7rem] 2xl:right-0 top-[1rem] lg:top-[5rem] w-[60px] lg:w-[115px] xl:w-[130px] 2xl:w-[150px] cursor-pointer" /></a>
+            <a  href={sitesLink[siteIndex][0]}><img   src={desktopImg[siteIndex]} alt="Prezentare site pe desktop" className="lg:left-0 left-[1.5rem] w-[280px] lg:w-[650px] xl:w-[700px] 2xl:w-[800px] cursor-pointer" /></a>
+            <a  href={sitesLink[siteIndex][0]}> <img src={phoneImg[siteIndex]} alt="Prezentare site pe mobil" className="absolute right-[.5rem] lg:right-[11rem] xl:right-[7rem] 2xl:right-0 top-[1rem] lg:top-[5rem] w-[60px] lg:w-[115px] xl:w-[130px] 2xl:w-[150px] cursor-pointer" /></a>
           </div>
           <div className='flex'>
               <div onClick={()=>setSiteIndex(0)} className={`relative ${siteIndex===0 ? "border-white" : "border-gray-500"} mt-[4rem] mx-4 flex justify-center items-center w-[15px] lg:w-[30px] h-[15px]  lg:h-[30px] rounded-[50%] bg-transparent border-[2px] overflow-hidden cursor-pointer`}><span className={`w-[70%] h-[70%] bg-white rounded-[50%] bg-opacity-[80%] ${siteIndex!==0 && "hidden"} `} /></div>
