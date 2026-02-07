@@ -223,7 +223,7 @@ function Personal() {
               HOW I STARTED MY PATH IN WEB DEVELOPMENT
             </h3>
             <p className=" text-gray-400 leading-5 text-justify lg:text-left">
-              Over three years ago, I embarked on my web development journey
+              Over five years ago, I embarked on my web development journey
               after gaining initial experience with C++. I started by mastering
               foundational languages such as HTML, CSS, and JavaScript before
               choosing to deepen my expertise with a modern framework—React
@@ -431,7 +431,6 @@ function Personal() {
 
             <p className="mt-2 text-center ">
               Currently studying Computer Science at University of Bucharest
-              (Finish on July 2025)
             </p>
           </div>
           <p className="">
